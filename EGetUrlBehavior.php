@@ -41,7 +41,7 @@ class EGetUrlBehavior extends CBehavior
 		if(!empty($this->baseUrl) && $this->baseUrl[0]!='/')
 			$this->baseUrl='/'.$this->baseUrl;
 
-		if($url[0]!='/')
+		if($url!='' && $url[0]!='/')
 			$url='/'.$url;
 
 		return $this->homeUrl.$this->baseUrl.$url;
